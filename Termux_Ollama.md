@@ -59,6 +59,11 @@ go build .
 ./ollama run gemma3:1b
 ```
 
+### 8) Exit the model once the model has run
+```bash
+/bye
+```
+
 ---
 
 ## 🔄 Restarting the Server
