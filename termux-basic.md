@@ -1,4 +1,4 @@
-# Termux Basic Setup (A–Z)
+# Termux Basic Setup
 
 **Audience:** Absolute beginners.
 
