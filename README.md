@@ -1,134 +1,47 @@
-# 🐧 Debian + XFCE Desktop + VNC on Android (via Termux)
+# Termux Tutorials
 
-এই README-তে দেখানো হয়েছে কিভাবে **Termux** ব্যবহার করে **Debian Linux + XFCE Desktop** মোবাইলে ইন্সটল করা যায় এবং **VNC Viewer** দিয়ে ডেস্কটপ চালানো যায়।  
-👉 এটি সবচেয়ে সহজ **root-only মেথড** (কোনো আলাদা ইউজার তৈরির ঝামেলা নেই)।  
+## Introduction
+This repository contains a collection of tutorials related to **Termux**.  
+Termux is a terminal emulator and Linux environment for Android, which allows you to run Linux tools, programming languages, servers, and even desktop environments on your mobile device.
 
----
-
-## 📌 যা লাগবে
-- **অ্যাপস:**
-  - [Termux](https://f-droid.org/en/packages/com.termux/) (F-Droid/GitHub থেকে; Play Store-এও পাওয়া যায়)
-  - [VNC Viewer](https://play.google.com/store/apps/details?id=com.realvnc.viewer.android) (বা bVNC)
-- **স্টোরেজ:** অন্তত 4–6 GB ফ্রি
-- **ইন্টারনেট:** ভালো কানেকশন
+The goal of this repository is to provide clear, step-by-step guides for both beginners and advanced users.
 
 ---
 
-## 🚀 ধাপে ধাপে ইন্সটলেশন
-
-### 1) Termux প্রাথমিক সেটআপ
-```bash
-pkg update && pkg upgrade -y
-termux-setup-storage
-
+## Termux Installation
+Termux is also available on the Play Store, but it is no longer updated there.  
+For the latest and most secure version, it is recommended to download Termux from GitHub:  
+[Download Termux (GitHub Releases)](https://github.com/termux/termux-app/releases)
 
 ---
 
-2) proot-distro ইনস্টল ও Debian বসানো
-
-pkg install -y proot-distro
-proot-distro install debian
-
-
----
-
-3) Debian-এ ঢোকা
-
-proot-distro login debian
-
+## Tutorials Index
+| Topic | Description | Link |
+|-------|-------------|------|
+| Termux Basic Setup | Initial setup after installing Termux | [Read](./termux-basic.md) |
+| Python Installation | Install and use Python in Termux | [Read](./python-install.md) |
+| Using Ollama (AI) | Run Ollama and use AI models inside Termux | [Read](./ollama-ai-termux.md) |
+| Debian with VNC | Run a Debian desktop environment using VNC | [Read](./debian-vnc.md) |
 
 ---
 
-4) Debian আপডেট + ডেস্কটপ + VNC ইন্সটল
-
-apt update && apt full-upgrade -y
-apt install -y xfce4 xfce4-goodies dbus-x11 tigervnc-standalone-server
-
-
----
-
-5) VNC সার্ভার চালু করা
-
-vncserver -localhost :1
-
-প্রথমবার VNC password চাইবে (৬–৮ অক্ষর) → সেট করে দাও
-
-view-only password চাইলে → n চাপো
-
-
+## Why this Repository?
+- A single place for organized Termux tutorials  
+- Step-by-step documentation for new users  
+- Programming environment setup (Python, Node.js, etc.)  
+- Running Linux distributions with VNC desktop access  
+- Using AI tools like Ollama directly in Termux  
 
 ---
 
-6) VNC Viewer অ্যাপ দিয়ে কানেক্ট করা
-
-Address: localhost:1 (বা 127.0.0.1:5901)
-
-Name: যেকোনো নাম
-
-Password: যেটা সেট করেছিলে
-
-
+## How to Use
+1. Install Termux from [GitHub Releases](https://github.com/termux/termux-app/releases)  
+2. Follow the [Termux Basic Setup](./termux-basic.md) tutorial  
+3. Select the topic you need from the tutorial index  
+4. Each tutorial is written in a simple, step-by-step format for easy use  
 
 ---
 
-📖 প্রতিদিন ব্যবহার
-
-চালু করতে:
-
-proot-distro login debian
-vncserver -localhost :1
-
-বন্ধ করতে:
-
-vncserver -kill :1
-exit
-
-রিস্টার্ট করতে:
-
-vncserver -kill :1
-vncserver -localhost :1
-
-
----
-
-⚙️ দরকারি টিপস
-
-রেজোলিউশন বদলাতে:
-
-vncserver -localhost :1 -geometry 1280x720 -depth 24
-
-পাসওয়ার্ড পাল্টাতে:
-
-vncpasswd
-
-Debian থেকে বের হতে:
-
-exit
-
-Debian একেবারে রিমুভ করতে:
-
-proot-distro remove debian
-
-
-
----
-
-✅ দ্রুত চেকলিস্ট (মেমোরি শর্টকাট)
-
-# Termux-এ একবার চালাও
-pkg update && pkg upgrade -y
-termux-setup-storage
-pkg install -y proot-distro
-proot-distro install debian
-proot-distro login debian
-apt update && apt full-upgrade -y
-apt install -y xfce4 xfce4-goodies dbus-x11 tigervnc-standalone-server
-vncserver -localhost :1
-
-# প্রতিদিন চালাতে
-proot-distro login debian
-vncserver -localhost :1
-
-# বন্ধ করতে
-vncserver -kill :1
-exit
+## Start Here
+Before exploring individual tutorials, it is recommended to read the main guide:  
+[Termux Tutorial (Full Guide)](./termux-tutorial.md)
