@@ -1,4 +1,4 @@
-# 🐧 Debian XFCE Desktop on Android (via Termux + VNC)
+# Debian XFCE Setup on Android with Termux & VNC
 
 This guide shows how to install **Debian Linux with XFCE Desktop** inside **Termux** on Android, and run it with **VNC Viewer**.  
 
