@@ -1,4 +1,4 @@
-# 📱 Termux Ollama Setup Guide
+# Termux Ollama Setup Guide
 
 A complete step-by-step guide to install and run **Ollama (LLM runtime)** on Android using **Termux**.  
 This document is structured so you can copy-paste commands in one click.
