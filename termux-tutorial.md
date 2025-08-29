@@ -1,4 +1,4 @@
-# Termux Tutorial (Comprehensive Guide)
+# Termux Tutorial
 
 **Audience:** Beginners who want to understand Termux from A to Z.
 
