@@ -21,7 +21,7 @@ For the latest and most secure version, it is recommended to download Termux fro
 | Termux Basic Setup | Initial setup after installing Termux | [Read](./termux-basic.md) |
 | Python Installation | Install and use Python in Termux | [Read](./python-install.md) |
 | Using Ollama (AI) | Run Ollama and use AI models inside Termux | [Read](./ollama-ai-termux.md) |
-| Debian with VNC | Run a Debian desktop environment using VNC | [Read](./debian-vnc.md) |
+| Debian with VNC | Run a Debian desktop environment using VNC | [Read](./termux-debian.md) |
 
 ---
 
@@ -35,7 +35,7 @@ For the latest and most secure version, it is recommended to download Termux fro
 ---
 
 ## How to Use
-1. Install Termux from [GitHub Releases](https://github.com/termux/termux-app/releases)  
+1. Install Termux from [GitHub](https://github.com/termux)  
 2. Follow the [Termux Basic Setup](./termux-basic.md) tutorial  
 3. Select the topic you need from the tutorial index  
 4. Each tutorial is written in a simple, step-by-step format for easy use  
