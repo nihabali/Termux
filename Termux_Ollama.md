@@ -5,7 +5,7 @@ This document is structured so you can copy-paste commands in one click.
 
 ---
 
-## 🔗 Useful Links
+## Useful Links
 - **Download Termux (F-Droid):**  
   https://f-droid.org/packages/com.termux/
 
@@ -20,7 +20,7 @@ This document is structured so you can copy-paste commands in one click.
 
 ---
 
-## 🛠️ Installation
+## Installation
 
 ### 1) Update Termux
 ```bash
@@ -66,7 +66,7 @@ go build .
 
 ---
 
-## 🔄 Restarting the Server
+## Restarting the Server
 ```bash
 cd ~/ollama
 ./ollama serve &
@@ -75,29 +75,29 @@ cd ~/ollama
 
 ---
 
-## 🤖 Running Other Models
+## Running Other Models
 ```bash
 ollama run phi3:mini
 ```
-👉 Full list of available models: https://ollama.com/library
+Full list of available models: https://ollama.com/library
 
 ---
 
-## 📱 Using a Client App (Optional)
+## Using a Client App (Optional)
 - Install this Android client:  
   https://github.com/JHubi1/ollama-app  
 - Connect it to your local Ollama server for a better UI experience.
 
 ---
 
-## ⚡ Quick Setup (One Command)
+## Quick Setup (One Command)
 ```bash
 pkg update && pkg upgrade -y && pkg install git cmake golang -y && git clone --depth 1 https://github.com/ollama/ollama && cd ollama && go generate ./... && go build . && ./ollama serve & && ./ollama run gemma3:1b
 ```
 
 ---
 
-## ✅ Notes
+## Notes
 - First time running a model downloads it from the internet.
 - After download, models run offline.
 - Restart the server anytime with:  
@@ -108,6 +108,6 @@ pkg update && pkg upgrade -y && pkg install git cmake golang -y && git clone --d
 
 ---
 
-## 📚 References
+## References
 - Ollama Docs: https://github.com/ollama/ollama  
 - Termux Wiki: https://wiki.termux.com/
